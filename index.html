@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking.com - Бронирование отелей</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Booking.com</div>
+            <ul class="nav-links">
+                <li><a href="#search">Поиск</a></li>
+                <li><a href="#hotels">Отели</a></li>
+                <li><a href="#account">Личный кабинет</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h1>Найдите идеальное жильё для путешествия</h1>
+            <div class="search-form">
+                <input type="text" placeholder="Куда вы едете?" id="destination">
+                <input type="date" id="checkin">
+                <input type="date" id="checkout">
+                <input type="number" placeholder="Гости" id="guests">
+                <button onclick="searchHotels()">Найти</button>
+            </div>
+        </section>
+        
+        <section class="hotels-list" id="hotels">
+            <h2>Популярные отели</h2>
+            <div class="hotel-card">
+                <img src="hotel1.jpg" alt="Отель">
+                <h3>Гранд Отель</h3>
+                <p>Санкт-Петербург</p>
+                <p class="price">от 5000 ₽/ночь</p>
+                <button>Забронировать</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2026 Booking.com Project. Литвинова С.В.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
